@@ -1,5 +1,10 @@
 <h2>My Heroes</h2>
+<div>
+  <label for="new-hero">Hero name:</label>
+  <input id="new-hero" [(ngModel)]="heroName"/>
 
+  <button type="button" class="add-button" (click)="add(heroName)">Add hero</button>
+</div>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
     <nav>
